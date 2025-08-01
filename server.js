@@ -24,7 +24,7 @@ app.post('/admin', async (req, res) => {
   res.json(entries);
 });
 
-app.get('/test', (req, res) => {
+app.get('/test',async (req, res) => {
   res.send("Test endpoint is working");
 });
 
