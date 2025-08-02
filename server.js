@@ -24,8 +24,8 @@ app.post('/admin', async (req, res) => {
   res.json(entries);
 });
 
-app.get('/test',async (req, res) => {
-  res.send("Test endpoint is working");
+app.get('/test', (req, res) => {
+  res.send("Test successful");
 });
 
 const PORT = process.env.PORT || 5000;
